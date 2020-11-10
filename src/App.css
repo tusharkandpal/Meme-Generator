@@ -2,37 +2,50 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header{
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-around;
+  padding: 15px;
+  background-image: linear-gradient(to left, rgb(156, 145, 253), rgb(6, 0, 63));
+}
+header h2{
+  font-size: 2rem;
+  text-shadow: rgb(68, 68, 185) 3px 3px;
+}
+.meme-form{
+  margin: 10px;
+}
+.meme-form input{
+  margin: 0 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+.meme-form button{
+  background-color: rgb(46, 2, 87);
   color: white;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: x-large;
 }
 
-.App-link {
-  color: #61dafb;
+.meme{
+  position: relative;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.meme h2{
+  position: absolute;
+  left: 50%;
+  color: white;
+  background-color: black;
+  text-transform: uppercase;
+  text-align: center;
+  transform: translateX(-50%);
+}
+
+#topText{
+  top: 0px;
+}
+#bottomText{
+  bottom: 0px;
 }
